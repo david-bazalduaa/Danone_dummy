@@ -1,0 +1,4 @@
+dataset_version,as_of_date,factory_id,factory_name,state,city,lat,lon,overall_risk_oos_7d,critical_sku_id,critical_sku_name,top10_count,critical_sku_id_calc,critical_sku_name_calc,critical_risk_calc
+mx_pilot_sku_v1,2026-01-14,MX_TOL_01,Planta Toluca,Estado de México,Toluca,19.2826,-99.6557,0.82,TOL-INF-004,Infant Formula Stage 1 800g,2,TOL-INF-004,Infant Formula Stage 1 800g,0.82
+mx_pilot_sku_v1,2026-01-14,MX_IRA_02,Planta Irapuato,Guanajuato,Irapuato,20.6767,-101.3563,0.46,IRA-DAI-006,Yogurt Strawberry 1L,1,IRA-DAI-006,Yogurt Strawberry 1L,0.46
+mx_pilot_sku_v1,2026-01-14,MX_VDM_03,Planta Valle de México,Estado de México,Cuautitlán Izcalli,19.6469,-99.246,0.68,VDM-WAT-003,Water 600ml 24-pack,1,VDM-WAT-003,Water 600ml 24-pack,0.68

@@ -1,0 +1,168 @@
+{
+  "dataset_version": "mx_pilot_sku_v1",
+  "generated_at_utc": "2026-01-14T14:00:00Z",
+  "as_of_date": "2026-01-14",
+  "time_zone": "America/Mexico_City",
+  "horizon_days": 7,
+  "severity_thresholds": {
+    "red": 0.7,
+    "yellow": 0.35,
+    "green": 0.0
+  },
+  "prediction_scope": {
+    "primary_target": "risk_oos_t_plus_7",
+    "aggregation_factory_level": "max_sku_risk",
+    "top_k_skus": 10
+  },
+  "factories": [
+    {
+      "factory_id": "MX_TOL_01",
+      "factory_name": "Planta Toluca",
+      "state": "Estado de México",
+      "city": "Toluca",
+      "geo": { "lat": 19.2826, "lon": -99.6557 },
+      "overall_risk_oos_7d": 0.82,
+      "critical_sku": {
+        "sku_id": "TOL-INF-004",
+        "sku_name": "Infant Formula Stage 1 800g"
+      },
+      "top_10_skus": [
+        {
+          "sku_id": "TOL-INF-004",
+          "sku_name": "Infant Formula Stage 1 800g",
+          "sku_family": "INFANT_NUTRITION",
+          "risk_oos_7d": 0.82,
+          "confidence": 0.78,
+          "derived": {
+            "days_of_supply": 3.4,
+            "stockout_date_est": "2026-01-18",
+            "stock_needed_next_7d": 28000
+          },
+          "current_state": {
+            "on_hand_units": 36000,
+            "in_transit_units": 8000,
+            "on_order_units": 12000,
+            "daily_demand_units": 16500,
+            "lead_time_days_mean": 7.1,
+            "lead_time_days_std": 2.0,
+            "promo_uplift_index": 1.10,
+            "scrap_rate_7d": 0.006
+          },
+          "drivers": [
+            { "feature": "days_of_supply", "impact": 0.32 },
+            { "feature": "lead_time_days_std", "impact": 0.22 },
+            { "feature": "promo_uplift_index", "impact": 0.12 }
+          ]
+        },
+        {
+          "sku_id": "TOL-DAI-002",
+          "sku_name": "Milk Whole 1L",
+          "sku_family": "DAIRY_FRESH",
+          "risk_oos_7d": 0.71,
+          "confidence": 0.81,
+          "derived": {
+            "days_of_supply": 4.1,
+            "stockout_date_est": "2026-01-19",
+            "stock_needed_next_7d": 19000
+          },
+          "current_state": {
+            "on_hand_units": 82000,
+            "in_transit_units": 10000,
+            "on_order_units": 14000,
+            "daily_demand_units": 26000,
+            "lead_time_days_mean": 2.6,
+            "lead_time_days_std": 1.4,
+            "promo_uplift_index": 1.12,
+            "scrap_rate_7d": 0.019
+          },
+          "drivers": [
+            { "feature": "promo_uplift_index", "impact": 0.18 },
+            { "feature": "days_of_supply", "impact": 0.21 }
+          ]
+        }
+      ]
+    },
+
+    {
+      "factory_id": "MX_IRA_02",
+      "factory_name": "Planta Irapuato",
+      "state": "Guanajuato",
+      "city": "Irapuato",
+      "geo": { "lat": 20.6767, "lon": -101.3563 },
+      "overall_risk_oos_7d": 0.46,
+      "critical_sku": {
+        "sku_id": "IRA-DAI-006",
+        "sku_name": "Yogurt Strawberry 1L"
+      },
+      "top_10_skus": [
+        {
+          "sku_id": "IRA-DAI-006",
+          "sku_name": "Yogurt Strawberry 1L",
+          "sku_family": "DAIRY_FRESH",
+          "risk_oos_7d": 0.46,
+          "confidence": 0.86,
+          "derived": {
+            "days_of_supply": 6.1,
+            "stockout_date_est": "2026-01-22",
+            "stock_needed_next_7d": 8000
+          },
+          "current_state": {
+            "on_hand_units": 74000,
+            "in_transit_units": 12000,
+            "on_order_units": 10000,
+            "daily_demand_units": 15500,
+            "lead_time_days_mean": 2.4,
+            "lead_time_days_std": 1.1,
+            "promo_uplift_index": 1.05,
+            "scrap_rate_7d": 0.017
+          },
+          "drivers": [
+            { "feature": "days_of_supply", "impact": 0.16 },
+            { "feature": "promo_uplift_index", "impact": 0.10 }
+          ]
+        }
+      ]
+    },
+
+    {
+      "factory_id": "MX_VDM_03",
+      "factory_name": "Planta Valle de México",
+      "state": "Estado de México",
+      "city": "Cuautitlán Izcalli",
+      "geo": { "lat": 19.6469, "lon": -99.2460 },
+      "overall_risk_oos_7d": 0.68,
+      "critical_sku": {
+        "sku_id": "VDM-WAT-003",
+        "sku_name": "Water 600ml 24-pack"
+      },
+      "top_10_skus": [
+        {
+          "sku_id": "VDM-WAT-003",
+          "sku_name": "Water 600ml 24-pack",
+          "sku_family": "WATER_BEVERAGES",
+          "risk_oos_7d": 0.68,
+          "confidence": 0.80,
+          "derived": {
+            "days_of_supply": 4.8,
+            "stockout_date_est": "2026-01-20",
+            "stock_needed_next_7d": 21000
+          },
+          "current_state": {
+            "on_hand_units": 68000,
+            "in_transit_units": 9000,
+            "on_order_units": 16000,
+            "daily_demand_units": 23000,
+            "lead_time_days_mean": 3.3,
+            "lead_time_days_std": 1.5,
+            "promo_uplift_index": 1.07,
+            "scrap_rate_7d": 0.004
+          },
+          "drivers": [
+            { "feature": "days_of_supply", "impact": 0.24 },
+            { "feature": "lead_time_days_std", "impact": 0.18 }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+factory_id,factory_name,state,city,lat,lon,critical_sku_id,critical_sku_name,overall_risk_oos_7d,severity
+MX_TOL_01,Planta Toluca,Estado de México,Toluca,19.2826,-99.6557,TOL-INF-004,Infant Formula Stage 1 800g,0.95,RED
+MX_IRA_02,Planta Irapuato,Guanajuato,Irapuato,20.6767,-101.3563,IRA-DAI-006,Yogurt Strawberry 1L,0.6,YELLOW
+MX_VDM_03,Planta Valle de México,Estado de México,Cuautitlán Izcalli,19.6469,-99.246,VDM-WAT-003,Water 600ml 24-pack,0.6,YELLOW
