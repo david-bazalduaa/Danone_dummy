@@ -1,0 +1,329 @@
+{
+  "as_of_date": "2026-01-14",
+  "rows": [
+    {
+      "dataset_version": "mx_pilot_sku_v1",
+      "as_of_date": "2026-01-14",
+      "factory_id": "MX_TOL_01",
+      "factory_name": "Planta Toluca",
+      "location": {
+        "lat": 19.2826,
+        "lon": -99.6557
+      },
+      "factory_overall_risk_score": 82,
+      "rank_in_factory": 1,
+      "sku_id": "TOL-INF-004",
+      "sku_name": "Danone Bebible Natural Deslactosado",
+      "sku_family": "Danone Bebible (Deslactosado)",
+      "risk_score": 82,
+      "risk_band": "High",
+      "confidence": 0.78,
+      "days_of_supply": 3.4,
+      "expected_stockout_date": "2026-01-18",
+      "on_hand_units": 36000,
+      "in_transit_units": 8000,
+      "on_order_units": 12000,
+      "daily_demand_units": 16500,
+      "lead_time_days_mean": 7.1,
+      "lead_time_days_std": 2.0,
+      "promo_uplift_index": 1.1,
+      "scrap_rate_7d": 0.006,
+      "drivers": [
+        {
+          "feature": "days_of_supply",
+          "impact": 0.32
+        },
+        {
+          "feature": "lead_time_days_std",
+          "impact": 0.22
+        },
+        {
+          "feature": "promo_uplift_index",
+          "impact": 0.12
+        }
+      ]
+    },
+    {
+      "dataset_version": "mx_pilot_sku_v1",
+      "as_of_date": "2026-01-14",
+      "factory_id": "MX_TOL_01",
+      "factory_name": "Planta Toluca",
+      "location": {
+        "lat": 19.2826,
+        "lon": -99.6557
+      },
+      "factory_overall_risk_score": 82,
+      "rank_in_factory": 2,
+      "sku_id": "TOL-DAI-002",
+      "sku_name": "Danone Natural con miel",
+      "sku_family": "Danone Natural",
+      "risk_score": 71,
+      "risk_band": "High",
+      "confidence": 0.81,
+      "days_of_supply": 4.1,
+      "expected_stockout_date": "2026-01-19",
+      "on_hand_units": 82000,
+      "in_transit_units": 10000,
+      "on_order_units": 14000,
+      "daily_demand_units": 26000,
+      "lead_time_days_mean": 2.6,
+      "lead_time_days_std": 1.4,
+      "promo_uplift_index": 1.12,
+      "scrap_rate_7d": 0.019,
+      "drivers": [
+        {
+          "feature": "promo_uplift_index",
+          "impact": 0.18
+        },
+        {
+          "feature": "days_of_supply",
+          "impact": 0.21
+        }
+      ]
+    },
+    {
+      "dataset_version": "mx_pilot_sku_v1",
+      "as_of_date": "2026-01-14",
+      "factory_id": "MX_IRA_02",
+      "factory_name": "Planta Irapuato",
+      "location": {
+        "lat": 20.6767,
+        "lon": -101.3563
+      },
+      "factory_overall_risk_score": 46,
+      "rank_in_factory": 1,
+      "sku_id": "IRA-DAI-006",
+      "sku_name": "Danone Bebible de Fresa Deslactosado",
+      "sku_family": "Danone Bebible (Deslactosado)",
+      "risk_score": 46,
+      "risk_band": "Medium",
+      "confidence": 0.86,
+      "days_of_supply": 6.1,
+      "expected_stockout_date": "2026-01-22",
+      "on_hand_units": 74000,
+      "in_transit_units": 12000,
+      "on_order_units": 10000,
+      "daily_demand_units": 15500,
+      "lead_time_days_mean": 2.4,
+      "lead_time_days_std": 1.1,
+      "promo_uplift_index": 1.05,
+      "scrap_rate_7d": 0.017,
+      "drivers": [
+        {
+          "feature": "days_of_supply",
+          "impact": 0.16
+        },
+        {
+          "feature": "promo_uplift_index",
+          "impact": 0.1
+        }
+      ]
+    },
+    {
+      "dataset_version": "mx_pilot_sku_v1",
+      "as_of_date": "2026-01-14",
+      "factory_id": "MX_VDM_03",
+      "factory_name": "Planta Valle de México",
+      "location": {
+        "lat": 19.6469,
+        "lon": -99.246
+      },
+      "factory_overall_risk_score": 68,
+      "rank_in_factory": 1,
+      "sku_id": "VDM-WAT-003",
+      "sku_name": "Bonafont Purified Water 600ml (24-pack)",
+      "sku_family": "Bonafont Water",
+      "risk_score": 68,
+      "risk_band": "Medium",
+      "confidence": 0.8,
+      "days_of_supply": 4.8,
+      "expected_stockout_date": "2026-01-20",
+      "on_hand_units": 68000,
+      "in_transit_units": 9000,
+      "on_order_units": 16000,
+      "daily_demand_units": 23000,
+      "lead_time_days_mean": 3.3,
+      "lead_time_days_std": 1.5,
+      "promo_uplift_index": 1.07,
+      "scrap_rate_7d": 0.004,
+      "drivers": [
+        {
+          "feature": "days_of_supply",
+          "impact": 0.24
+        },
+        {
+          "feature": "lead_time_days_std",
+          "impact": 0.18
+        }
+      ]
+    },
+    {
+      "dataset_version": "mx_pilot_sku_v1",
+      "as_of_date": "2026-01-14",
+      "factory_id": "MX-GDL",
+      "factory_name": "Guadalajara Plant",
+      "location": {
+        "lat": 20.6597,
+        "lon": -103.3496
+      },
+      "factory_overall_risk_score": 58,
+      "rank_in_factory": 1,
+      "sku_id": "GDL-DAN-013",
+      "sku_name": "Danone Familiar miel y granola",
+      "sku_family": "Danone Familiar",
+      "risk_score": 58,
+      "risk_band": "Medium",
+      "confidence": 0.794,
+      "days_of_supply": 5.2,
+      "expected_stockout_date": "2026-01-22",
+      "on_hand_units": 59979,
+      "in_transit_units": 4791,
+      "on_order_units": 10467,
+      "daily_demand_units": 1482,
+      "lead_time_days_mean": 3.366119286762194,
+      "lead_time_days_std": 2.325564514612612,
+      "promo_uplift_index": 1.0428091459139865,
+      "scrap_rate_7d": 0.011747083826373945,
+      "drivers": [
+        {
+          "feature": "days_of_supply",
+          "impact": 0.30792756730417514
+        },
+        {
+          "feature": "promo_uplift_index",
+          "impact": 0.2156726678556029
+        },
+        {
+          "feature": "lead_time_days_std",
+          "impact": 0.1509207550685755
+        }
+      ]
+    },
+    {
+      "dataset_version": "mx_pilot_sku_v1",
+      "as_of_date": "2026-01-14",
+      "factory_id": "MX-GDL",
+      "factory_name": "Guadalajara Plant",
+      "location": {
+        "lat": 20.6597,
+        "lon": -103.3496
+      },
+      "factory_overall_risk_score": 51,
+      "rank_in_factory": 2,
+      "sku_id": "GDL-DAN-017",
+      "sku_name": "Danone Familiar sabor fresa (sin trozos)",
+      "sku_family": "Danone Familiar",
+      "risk_score": 51,
+      "risk_band": "Medium",
+      "confidence": 0.8079999999999999,
+      "days_of_supply": 5.9,
+      "expected_stockout_date": "2026-01-24",
+      "on_hand_units": 55532,
+      "in_transit_units": 11560,
+      "on_order_units": 10773,
+      "daily_demand_units": 13831,
+      "lead_time_days_mean": 3.4927049680841913,
+      "lead_time_days_std": 1.176785251594306,
+      "promo_uplift_index": 1.2658738632317696,
+      "scrap_rate_7d": 0.0015615935438222839,
+      "drivers": [
+        {
+          "feature": "days_of_supply",
+          "impact": 0.3338894441485878
+        },
+        {
+          "feature": "promo_uplift_index",
+          "impact": 0.14590435147912614
+        },
+        {
+          "feature": "lead_time_days_std",
+          "impact": 0.19530412306134354
+        }
+      ]
+    },
+    {
+      "dataset_version": "mx_pilot_sku_v1",
+      "as_of_date": "2026-01-14",
+      "factory_id": "MX-SLP",
+      "factory_name": "San Luis Potosi Plant",
+      "location": {
+        "lat": 22.1565,
+        "lon": -100.9855
+      },
+      "factory_overall_risk_score": 44,
+      "rank_in_factory": 1,
+      "sku_id": "SLP-DAN-039",
+      "sku_name": "Danette postre lácteo chocolate",
+      "sku_family": "Danette Dessert",
+      "risk_score": 44,
+      "risk_band": "Medium",
+      "confidence": 0.822,
+      "days_of_supply": 6.0,
+      "expected_stockout_date": "2026-01-23",
+      "on_hand_units": 47644,
+      "in_transit_units": 3569,
+      "on_order_units": 16423,
+      "daily_demand_units": 13924,
+      "lead_time_days_mean": 4.368942606491033,
+      "lead_time_days_std": 2.1259154832541913,
+      "promo_uplift_index": 1.2117938980970888,
+      "scrap_rate_7d": 0.009876944463792678,
+      "drivers": [
+        {
+          "feature": "days_of_supply",
+          "impact": 0.3378853419447789
+        },
+        {
+          "feature": "promo_uplift_index",
+          "impact": 0.262309788281751
+        },
+        {
+          "feature": "lead_time_days_std",
+          "impact": 0.13147304916001484
+        }
+      ]
+    },
+    {
+      "dataset_version": "mx_pilot_sku_v1",
+      "as_of_date": "2026-01-14",
+      "factory_id": "MX-SLP",
+      "factory_name": "San Luis Potosi Plant",
+      "location": {
+        "lat": 22.1565,
+        "lon": -100.9855
+      },
+      "factory_overall_risk_score": 39,
+      "rank_in_factory": 2,
+      "sku_id": "SLP-DAN-018",
+      "sku_name": "Danone Griego sin azúcar",
+      "sku_family": "Danone Greek",
+      "risk_score": 39,
+      "risk_band": "Low",
+      "confidence": 0.832,
+      "days_of_supply": 6.6,
+      "expected_stockout_date": "2026-01-25",
+      "on_hand_units": 2755,
+      "in_transit_units": 6176,
+      "on_order_units": 5932,
+      "daily_demand_units": 10571,
+      "lead_time_days_mean": 4.0197088597875785,
+      "lead_time_days_std": 2.142582045853656,
+      "promo_uplift_index": 1.0383508064280111,
+      "scrap_rate_7d": 0.0188255825260023,
+      "drivers": [
+        {
+          "feature": "days_of_supply",
+          "impact": 0.3681408100657874
+        },
+        {
+          "feature": "promo_uplift_index",
+          "impact": 0.16532177576523893
+        },
+        {
+          "feature": "lead_time_days_std",
+          "impact": 0.14535925226813973
+        }
+      ]
+    }
+  ]
+}

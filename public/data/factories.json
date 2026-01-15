@@ -1,0 +1,53 @@
+[
+  {
+    "factory_id": "MX_TOL_01",
+    "factory_name": "Planta Toluca",
+    "state": "Estado de México",
+    "city": "Toluca",
+    "geo": {
+      "lat": 19.2826,
+      "lon": -99.6557
+    },
+    "overall_risk_oos_7d": 0.95,
+    "severity": "RED",
+    "critical_sku": {
+      "sku_id": "TOL-INF-004",
+      "sku_name": "Infant Formula Stage 1 800g"
+    },
+    "as_of_date": "2026-01-14"
+  },
+  {
+    "factory_id": "MX_IRA_02",
+    "factory_name": "Planta Irapuato",
+    "state": "Guanajuato",
+    "city": "Irapuato",
+    "geo": {
+      "lat": 20.6767,
+      "lon": -101.3563
+    },
+    "overall_risk_oos_7d": 0.6,
+    "severity": "YELLOW",
+    "critical_sku": {
+      "sku_id": "IRA-DAI-006",
+      "sku_name": "Yogurt Strawberry 1L"
+    },
+    "as_of_date": "2026-01-14"
+  },
+  {
+    "factory_id": "MX_VDM_03",
+    "factory_name": "Planta Valle de México",
+    "state": "Estado de México",
+    "city": "Cuautitlán Izcalli",
+    "geo": {
+      "lat": 19.6469,
+      "lon": -99.246
+    },
+    "overall_risk_oos_7d": 0.6,
+    "severity": "YELLOW",
+    "critical_sku": {
+      "sku_id": "VDM-WAT-003",
+      "sku_name": "Water 600ml 24-pack"
+    },
+    "as_of_date": "2026-01-14"
+  }
+]

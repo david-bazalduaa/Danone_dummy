@@ -1,53 +1,102 @@
 [
   {
+    "dataset_version": "mx_pilot_sku_v1",
+    "as_of_date": "2026-01-14",
     "factory_id": "MX_TOL_01",
-    "factory_name": "Planta Toluca",
+    "factory_name": "Toluca Plant",
     "state": "Estado de México",
     "city": "Toluca",
-    "geo": {
+    "location": {
       "lat": 19.2826,
       "lon": -99.6557
     },
-    "overall_risk_oos_7d": 0.95,
-    "severity": "RED",
+    "global_risk_score": 82,
+    "risk_band": "High",
+    "top10_count": 2,
     "critical_sku": {
       "sku_id": "TOL-INF-004",
-      "sku_name": "Infant Formula Stage 1 800g"
-    },
-    "as_of_date": "2026-01-14"
+      "sku_name": "Infant Formula Stage 1 800g",
+      "risk_score": 82
+    }
   },
   {
+    "dataset_version": "mx_pilot_sku_v1",
+    "as_of_date": "2026-01-14",
     "factory_id": "MX_IRA_02",
-    "factory_name": "Planta Irapuato",
+    "factory_name": "Irapuato Plant",
     "state": "Guanajuato",
     "city": "Irapuato",
-    "geo": {
+    "location": {
       "lat": 20.6767,
       "lon": -101.3563
     },
-    "overall_risk_oos_7d": 0.6,
-    "severity": "YELLOW",
+    "global_risk_score": 46,
+    "risk_band": "Medium",
+    "top10_count": 1,
     "critical_sku": {
       "sku_id": "IRA-DAI-006",
-      "sku_name": "Yogurt Strawberry 1L"
-    },
-    "as_of_date": "2026-01-14"
+      "sku_name": "Yogurt Strawberry 1L",
+      "risk_score": 46
+    }
   },
   {
+    "dataset_version": "mx_pilot_sku_v1",
+    "as_of_date": "2026-01-14",
     "factory_id": "MX_VDM_03",
-    "factory_name": "Planta Valle de México",
+    "factory_name": "Valley of Mexico Plant",
     "state": "Estado de México",
     "city": "Cuautitlán Izcalli",
-    "geo": {
+    "location": {
       "lat": 19.6469,
       "lon": -99.246
     },
-    "overall_risk_oos_7d": 0.6,
-    "severity": "YELLOW",
+    "global_risk_score": 68,
+    "risk_band": "Medium",
+    "top10_count": 1,
     "critical_sku": {
       "sku_id": "VDM-WAT-003",
-      "sku_name": "Water 600ml 24-pack"
+      "sku_name": "Water 600ml 24-pack",
+      "risk_score": 68
+    }
+  },
+  {
+    "dataset_version": "mx_pilot_sku_v1",
+    "as_of_date": "2026-01-14",
+    "factory_id": "MX-GDL",
+    "factory_name": "Guadalajara Plant",
+    "state": "Jalisco",
+    "city": "Guadalajara",
+    "location": {
+      "lat": 20.6597,
+      "lon": -103.3496
     },
-    "as_of_date": "2026-01-14"
+    "global_risk_score": 49,
+    "risk_band": "Medium",
+    "top10_count": 10,
+    "critical_sku": {
+      "sku_id": "GDL-DAN-013",
+      "sku_name": "Danone Familiar miel y granola",
+      "risk_score": 58
+    }
+  },
+  {
+    "dataset_version": "mx_pilot_sku_v1",
+    "as_of_date": "2026-01-14",
+    "factory_id": "MX-SLP",
+    "factory_name": "San Luis Potosi Plant",
+    "state": "San Luis Potosi",
+    "city": "San Luis Potosi",
+    "location": {
+      "lat": 22.1565,
+      "lon": -100.9855
+    },
+    "global_risk_score": 34,
+    "risk_band": "Low",
+    "top10_count": 10,
+    "critical_sku": {
+      "sku_id": "SLP-DAN-039",
+      "sku_name": "Danette postre lácteo chocolate",
+      "risk_score": 44
+    }
   }
 ]
