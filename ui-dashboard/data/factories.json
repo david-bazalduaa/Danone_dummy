@@ -12,10 +12,10 @@
     },
     "global_risk_score": 82,
     "risk_band": "High",
-    "top10_count": 2,
+    "top10_count": 5,
     "critical_sku": {
       "sku_id": "TOL-INF-004",
-      "sku_name": "Infant Formula Stage 1 800g",
+      "sku_name": "Danone Bebible Natural Deslactosado",
       "risk_score": 82
     }
   },
@@ -31,11 +31,11 @@
       "lon": -101.3563
     },
     "global_risk_score": 46,
-    "risk_band": "Medium",
-    "top10_count": 1,
+    "risk_band": "Low",
+    "top10_count": 5,
     "critical_sku": {
       "sku_id": "IRA-DAI-006",
-      "sku_name": "Yogurt Strawberry 1L",
+      "sku_name": "Danone Bebible de Fresa Deslactosado",
       "risk_score": 46
     }
   },
@@ -52,10 +52,10 @@
     },
     "global_risk_score": 68,
     "risk_band": "Medium",
-    "top10_count": 1,
+    "top10_count": 5,
     "critical_sku": {
       "sku_id": "VDM-WAT-003",
-      "sku_name": "Water 600ml 24-pack",
+      "sku_name": "Bonafont Purified Water 600ml (24-pack)",
       "risk_score": 68
     }
   },
@@ -72,7 +72,7 @@
     },
     "global_risk_score": 49,
     "risk_band": "Medium",
-    "top10_count": 10,
+    "top10_count": 5,
     "critical_sku": {
       "sku_id": "GDL-DAN-013",
       "sku_name": "Danone Familiar miel y granola",
@@ -92,7 +92,7 @@
     },
     "global_risk_score": 34,
     "risk_band": "Low",
-    "top10_count": 10,
+    "top10_count": 5,
     "critical_sku": {
       "sku_id": "SLP-DAN-039",
       "sku_name": "Danette postre lácteo chocolate",

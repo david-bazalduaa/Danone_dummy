@@ -1,0 +1,908 @@
+{
+  "meta": {
+    "product": "Risk Intelligence",
+    "module": "Production Optimizer",
+    "language": "en",
+    "as_of_date": "2026-01-14",
+    "horizon_days": 7,
+    "is_demo": true,
+    "capacity_note": "Demo capacities per plant (weekly).",
+    "objective": "Cover forecast demand while minimizing overstock; prioritize high OOS risk SKUs under capacity constraints."
+  },
+  "kpis_global": {
+    "factories": 5,
+    "skus_in_plan_total": 25,
+    "total_capacity_week_units": 960000,
+    "total_recommended_production_units": 960000.0
+  },
+  "factories": [
+    {
+      "factory_id": "MX_TOL_01",
+      "factory_name": "Toluca Plant",
+      "state": "State of Mexico",
+      "city": "Toluca",
+      "location": {
+        "lat": 19.2826,
+        "lon": -99.6557
+      },
+      "global_risk_oos_7d": 0.75,
+      "risk_band": "High",
+      "capacity_week_units": 220000,
+      "capacity_used_units": 219999.9,
+      "capacity_remaining_units": 0.1,
+      "skus_in_plan": 5,
+      "next_stockout_date": "2026-01-17",
+      "plan": [
+        {
+          "sku_id": "TOL-INF-004",
+          "sku_name": "Danone Bebible Natural Deslactosado",
+          "sku_family": "Danone Bebible (Deslactosado)",
+          "risk_oos_7d": 0.75,
+          "risk_band": "High",
+          "confidence": 0.78,
+          "days_of_supply": 3.4,
+          "stockout_date_est": "2026-01-17",
+          "daily_demand_units": 16500.0,
+          "forecast_demand_7d_units": 127050.0,
+          "available_units": 56000.0,
+          "target_ending_stock_units": 41250.0,
+          "recommended_production_7d_units": 33305.4,
+          "projected_end_stock_units": -37744.6,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.32
+            },
+            {
+              "feature": "lead_time_days_std",
+              "impact": 0.22
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.12
+            }
+          ],
+          "recommended_actions": [
+            "Expedite production slot",
+            "Review promo uplift assumptions",
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "TOL-DAI-002",
+          "sku_name": "Danone Natural con miel",
+          "sku_family": "Danone Natural",
+          "risk_oos_7d": 0.61,
+          "risk_band": "Medium",
+          "confidence": 0.81,
+          "days_of_supply": 4.1,
+          "stockout_date_est": "2026-01-18",
+          "daily_demand_units": 26000.0,
+          "forecast_demand_7d_units": 203840.0,
+          "available_units": 106000.0,
+          "target_ending_stock_units": 65000.0,
+          "recommended_production_7d_units": 48294.3,
+          "projected_end_stock_units": -49545.7,
+          "drivers": [
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.18
+            },
+            {
+              "feature": "days_of_supply",
+              "impact": 0.21
+            }
+          ],
+          "recommended_actions": [
+            "Monitor inventory daily",
+            "Validate demand signal",
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "TOL-DAI-009",
+          "sku_name": "Danone Natural sin azúcar",
+          "sku_family": "Danone Natural",
+          "risk_oos_7d": 0.55,
+          "risk_band": "Medium",
+          "confidence": 0.89,
+          "days_of_supply": 4.2,
+          "stockout_date_est": "2026-01-18",
+          "daily_demand_units": 21060.0,
+          "forecast_demand_7d_units": 150368.4,
+          "available_units": 20800.0,
+          "target_ending_stock_units": 52650.0,
+          "recommended_production_7d_units": 54041.5,
+          "projected_end_stock_units": -75526.9,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.24
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.12
+            }
+          ],
+          "recommended_actions": [
+            "Monitor inventory daily",
+            "Validate demand signal",
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "TOL-BEB-011",
+          "sku_name": "Danone Bebible Fresa",
+          "sku_family": "Danone Bebible",
+          "risk_oos_7d": 0.46,
+          "risk_band": "Medium",
+          "confidence": 0.81,
+          "days_of_supply": 4.8,
+          "stockout_date_est": "2026-01-19",
+          "daily_demand_units": 15196.0,
+          "forecast_demand_7d_units": 113818.0,
+          "available_units": 15522.0,
+          "target_ending_stock_units": 37990.0,
+          "recommended_production_7d_units": 40419.1,
+          "projected_end_stock_units": -57876.9,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.12
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.18
+            }
+          ],
+          "recommended_actions": [
+            "Monitor inventory daily",
+            "Validate demand signal",
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "TOL-GRK-003",
+          "sku_name": "Danone Griego Natural",
+          "sku_family": "Danone Griego",
+          "risk_oos_7d": 0.39,
+          "risk_band": "Medium",
+          "confidence": 0.9,
+          "days_of_supply": 4.6,
+          "stockout_date_est": "2026-01-19",
+          "daily_demand_units": 17031.0,
+          "forecast_demand_7d_units": 127562.2,
+          "available_units": 21983.0,
+          "target_ending_stock_units": 42577.5,
+          "recommended_production_7d_units": 43939.6,
+          "projected_end_stock_units": -61639.6,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.13
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.17
+            }
+          ],
+          "recommended_actions": [
+            "Monitor inventory daily",
+            "Validate demand signal",
+            "Capacity constrained"
+          ]
+        }
+      ]
+    },
+    {
+      "factory_id": "MX_VDM_03",
+      "factory_name": "Valley of Mexico Plant",
+      "state": "State of Mexico",
+      "city": "Cuautitlan Izcalli",
+      "location": {
+        "lat": 19.6469,
+        "lon": -99.246
+      },
+      "global_risk_oos_7d": 0.55,
+      "risk_band": "Medium",
+      "capacity_week_units": 260000,
+      "capacity_used_units": 259999.9,
+      "capacity_remaining_units": 0.1,
+      "skus_in_plan": 5,
+      "next_stockout_date": "2026-01-18",
+      "plan": [
+        {
+          "sku_id": "VDM-WAT-003",
+          "sku_name": "Bonafont Purified Water 600ml (24-pack)",
+          "sku_family": "Bonafont Water",
+          "risk_oos_7d": 0.55,
+          "risk_band": "Medium",
+          "confidence": 0.8,
+          "days_of_supply": 4.8,
+          "stockout_date_est": "2026-01-19",
+          "daily_demand_units": 23000.0,
+          "forecast_demand_7d_units": 172270.0,
+          "available_units": 93000.0,
+          "target_ending_stock_units": 57500.0,
+          "recommended_production_7d_units": 37450.0,
+          "projected_end_stock_units": -41820.0,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.24
+            },
+            {
+              "feature": "lead_time_days_std",
+              "impact": 0.18
+            }
+          ],
+          "recommended_actions": [
+            "Monitor inventory daily",
+            "Validate demand signal",
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "VDM-WAT-010",
+          "sku_name": "Bonafont Agua 1.5L (6-pack)",
+          "sku_family": "Bonafont Water",
+          "risk_oos_7d": 0.53,
+          "risk_band": "Medium",
+          "confidence": 0.82,
+          "days_of_supply": 3.8,
+          "stockout_date_est": "2026-01-18",
+          "daily_demand_units": 27483.0,
+          "forecast_demand_7d_units": 205847.7,
+          "available_units": 25221.0,
+          "target_ending_stock_units": 68707.5,
+          "recommended_production_7d_units": 68272.0,
+          "projected_end_stock_units": -112354.7,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.11
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.22
+            }
+          ],
+          "recommended_actions": [
+            "Monitor inventory daily",
+            "Validate demand signal",
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "VDM-WAT-021",
+          "sku_name": "Bonafont Agua 600ml (12-pack)",
+          "sku_family": "Bonafont Water",
+          "risk_oos_7d": 0.45,
+          "risk_band": "Medium",
+          "confidence": 0.78,
+          "days_of_supply": 4.6,
+          "stockout_date_est": "2026-01-19",
+          "daily_demand_units": 14067.0,
+          "forecast_demand_7d_units": 100438.4,
+          "available_units": 13515.0,
+          "target_ending_stock_units": 35167.5,
+          "recommended_production_7d_units": 33430.6,
+          "projected_end_stock_units": -53492.8,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.15
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.22
+            }
+          ],
+          "recommended_actions": [
+            "Monitor inventory daily",
+            "Validate demand signal",
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "VDM-WAT-031",
+          "sku_name": "Bonafont Garrafón 20L",
+          "sku_family": "Bonafont Water",
+          "risk_oos_7d": 0.42,
+          "risk_band": "Medium",
+          "confidence": 0.77,
+          "days_of_supply": 4.5,
+          "stockout_date_est": "2026-01-18",
+          "daily_demand_units": 21560.0,
+          "forecast_demand_7d_units": 175067.2,
+          "available_units": 25518.0,
+          "target_ending_stock_units": 53900.0,
+          "recommended_production_7d_units": 55707.9,
+          "projected_end_stock_units": -93841.3,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.21
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.14
+            }
+          ],
+          "recommended_actions": [
+            "Monitor inventory daily",
+            "Validate demand signal",
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "VDM-WAT-042",
+          "sku_name": "Bonafont Agua mineral 355ml (12-pack)",
+          "sku_family": "Bonafont Water",
+          "risk_oos_7d": 0.36,
+          "risk_band": "Medium",
+          "confidence": 0.87,
+          "days_of_supply": 4.6,
+          "stockout_date_est": "2026-01-19",
+          "daily_demand_units": 26753.0,
+          "forecast_demand_7d_units": 198507.3,
+          "available_units": 27496.0,
+          "target_ending_stock_units": 66882.5,
+          "recommended_production_7d_units": 65139.4,
+          "projected_end_stock_units": -105871.9,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.26
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.09
+            }
+          ],
+          "recommended_actions": [
+            "Monitor inventory daily",
+            "Validate demand signal",
+            "Capacity constrained"
+          ]
+        }
+      ]
+    },
+    {
+      "factory_id": "MX_IRA_02",
+      "factory_name": "Irapuato Plant",
+      "state": "Guanajuato",
+      "city": "Irapuato",
+      "location": {
+        "lat": 20.6767,
+        "lon": -101.3563
+      },
+      "global_risk_oos_7d": 0.28,
+      "risk_band": "Low",
+      "capacity_week_units": 180000,
+      "capacity_used_units": 180000.1,
+      "capacity_remaining_units": 0.0,
+      "skus_in_plan": 5,
+      "next_stockout_date": "2026-01-20",
+      "plan": [
+        {
+          "sku_id": "IRA-DAI-006",
+          "sku_name": "Danone Bebible de Fresa Deslactosado",
+          "sku_family": "Danone Bebible (Deslactosado)",
+          "risk_oos_7d": 0.28,
+          "risk_band": "Low",
+          "confidence": 0.86,
+          "days_of_supply": 6.1,
+          "stockout_date_est": "2026-01-20",
+          "daily_demand_units": 15500.0,
+          "forecast_demand_7d_units": 113925.0,
+          "available_units": 96000.0,
+          "target_ending_stock_units": 38750.0,
+          "recommended_production_7d_units": 11589.3,
+          "projected_end_stock_units": -6335.7,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.16
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.1
+            }
+          ],
+          "recommended_actions": [
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "IRA-DAI-014",
+          "sku_name": "Danone Natural con frutas",
+          "sku_family": "Danone Natural",
+          "risk_oos_7d": 0.27,
+          "risk_band": "Low",
+          "confidence": 0.91,
+          "days_of_supply": 5.5,
+          "stockout_date_est": "2026-01-20",
+          "daily_demand_units": 21611.0,
+          "forecast_demand_7d_units": 160353.6,
+          "available_units": 24000.0,
+          "target_ending_stock_units": 54027.5,
+          "recommended_production_7d_units": 38930.4,
+          "projected_end_stock_units": -97423.2,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.2
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.15
+            }
+          ],
+          "recommended_actions": [
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "IRA-BEB-002",
+          "sku_name": "Danone Bebible Natural",
+          "sku_family": "Danone Bebible",
+          "risk_oos_7d": 0.23,
+          "risk_band": "Low",
+          "confidence": 0.87,
+          "days_of_supply": 5.9,
+          "stockout_date_est": "2026-01-20",
+          "daily_demand_units": 27251.0,
+          "forecast_demand_7d_units": 206017.6,
+          "available_units": 33899.0,
+          "target_ending_stock_units": 68127.5,
+          "recommended_production_7d_units": 49127.2,
+          "projected_end_stock_units": -122991.4,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.15
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.13
+            }
+          ],
+          "recommended_actions": [
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "IRA-GRK-005",
+          "sku_name": "Danone Griego Fresa",
+          "sku_family": "Danone Griego",
+          "risk_oos_7d": 0.22,
+          "risk_band": "Low",
+          "confidence": 0.79,
+          "days_of_supply": 5.5,
+          "stockout_date_est": "2026-01-20",
+          "daily_demand_units": 27904.0,
+          "forecast_demand_7d_units": 220720.6,
+          "available_units": 44927.0,
+          "target_ending_stock_units": 69760.0,
+          "recommended_production_7d_units": 50212.5,
+          "projected_end_stock_units": -125581.1,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.14
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.15
+            }
+          ],
+          "recommended_actions": [
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "IRA-DES-008",
+          "sku_name": "Danette postre lácteo vainilla",
+          "sku_family": "Danette",
+          "risk_oos_7d": 0.13,
+          "risk_band": "Low",
+          "confidence": 0.8,
+          "days_of_supply": 6.7,
+          "stockout_date_est": "2026-01-21",
+          "daily_demand_units": 17573.0,
+          "forecast_demand_7d_units": 136542.2,
+          "available_units": 33078.0,
+          "target_ending_stock_units": 43932.5,
+          "recommended_production_7d_units": 30140.7,
+          "projected_end_stock_units": -73323.5,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.12
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.16
+            }
+          ],
+          "recommended_actions": [
+            "Capacity constrained"
+          ]
+        }
+      ]
+    },
+    {
+      "factory_id": "MX-GDL",
+      "factory_name": "Guadalajara Plant",
+      "state": "Jalisco",
+      "city": "Guadalajara",
+      "location": {
+        "lat": 20.6597,
+        "lon": -103.3496
+      },
+      "global_risk_oos_7d": 0.44,
+      "risk_band": "Medium",
+      "capacity_week_units": 160000,
+      "capacity_used_units": 160000.0,
+      "capacity_remaining_units": 0.0,
+      "skus_in_plan": 5,
+      "next_stockout_date": "2026-01-19",
+      "plan": [
+        {
+          "sku_id": "GDL-DAN-013",
+          "sku_name": "Danone Familiar miel y granola",
+          "sku_family": "Danone Familiar",
+          "risk_oos_7d": 0.44,
+          "risk_band": "Medium",
+          "confidence": 0.794,
+          "days_of_supply": 5.2,
+          "stockout_date_est": "2026-01-19",
+          "daily_demand_units": 1482.0,
+          "forecast_demand_7d_units": 10818.1,
+          "available_units": 75237.0,
+          "target_ending_stock_units": 3705.0,
+          "recommended_production_7d_units": 0.0,
+          "projected_end_stock_units": 64418.9,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.30792756730417514
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.2156726678556029
+            },
+            {
+              "feature": "lead_time_days_std",
+              "impact": 0.1509207550685755
+            }
+          ],
+          "recommended_actions": [
+            "Monitor inventory daily",
+            "Validate demand signal",
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "GDL-DAN-017",
+          "sku_name": "Danone Familiar sabor fresa (sin trozos)",
+          "sku_family": "Danone Familiar",
+          "risk_oos_7d": 0.34,
+          "risk_band": "Low",
+          "confidence": 0.8079999999999999,
+          "days_of_supply": 5.9,
+          "stockout_date_est": "2026-01-20",
+          "daily_demand_units": 13831.0,
+          "forecast_demand_7d_units": 122558.1,
+          "available_units": 77865.0,
+          "target_ending_stock_units": 34577.5,
+          "recommended_production_7d_units": 20065.5,
+          "projected_end_stock_units": -24627.6,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.3338894441485878
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.14590435147912614
+            },
+            {
+              "feature": "lead_time_days_std",
+              "impact": 0.19530412306134354
+            }
+          ],
+          "recommended_actions": [
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "GDL-GRK-009",
+          "sku_name": "Danone Griego natural sin azúcar",
+          "sku_family": "Danone Griego",
+          "risk_oos_7d": 0.34,
+          "risk_band": "Low",
+          "confidence": 0.79,
+          "days_of_supply": 4.6,
+          "stockout_date_est": "2026-01-19",
+          "daily_demand_units": 18447.0,
+          "forecast_demand_7d_units": 131711.6,
+          "available_units": 22932.0,
+          "target_ending_stock_units": 46117.5,
+          "recommended_production_7d_units": 39208.6,
+          "projected_end_stock_units": -69571.0,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.24
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.14
+            }
+          ],
+          "recommended_actions": [
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "GDL-DES-004",
+          "sku_name": "Danette postre lácteo chocolate",
+          "sku_family": "Danette",
+          "risk_oos_7d": 0.27,
+          "risk_band": "Low",
+          "confidence": 0.8,
+          "days_of_supply": 5.7,
+          "stockout_date_est": "2026-01-20",
+          "daily_demand_units": 27202.0,
+          "forecast_demand_7d_units": 192318.1,
+          "available_units": 35084.0,
+          "target_ending_stock_units": 68005.0,
+          "recommended_production_7d_units": 57014.1,
+          "projected_end_stock_units": -100220.0,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.17
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.14
+            }
+          ],
+          "recommended_actions": [
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "GDL-BEB-006",
+          "sku_name": "Danone Bebible vainilla",
+          "sku_family": "Danone Bebible",
+          "risk_oos_7d": 0.24,
+          "risk_band": "Low",
+          "confidence": 0.76,
+          "days_of_supply": 5.8,
+          "stockout_date_est": "2026-01-20",
+          "daily_demand_units": 20020.0,
+          "forecast_demand_7d_units": 148548.4,
+          "available_units": 25911.0,
+          "target_ending_stock_units": 50050.0,
+          "recommended_production_7d_units": 43711.8,
+          "projected_end_stock_units": -78925.6,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.23
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.08
+            }
+          ],
+          "recommended_actions": [
+            "Capacity constrained"
+          ]
+        }
+      ]
+    },
+    {
+      "factory_id": "MX-SLP",
+      "factory_name": "San Luis Potosi Plant",
+      "state": "San Luis Potosi",
+      "city": "San Luis Potosi",
+      "location": {
+        "lat": 22.1565,
+        "lon": -100.9855
+      },
+      "global_risk_oos_7d": 0.26,
+      "risk_band": "Low",
+      "capacity_week_units": 140000,
+      "capacity_used_units": 140000.1,
+      "capacity_remaining_units": 0.0,
+      "skus_in_plan": 5,
+      "next_stockout_date": "2026-01-20",
+      "plan": [
+        {
+          "sku_id": "SLP-DAN-039",
+          "sku_name": "Danette postre lácteo chocolate",
+          "sku_family": "Danette Dessert",
+          "risk_oos_7d": 0.26,
+          "risk_band": "Low",
+          "confidence": 0.822,
+          "days_of_supply": 6.0,
+          "stockout_date_est": "2026-01-20",
+          "daily_demand_units": 13924.0,
+          "forecast_demand_7d_units": 118111.1,
+          "available_units": 67636.0,
+          "target_ending_stock_units": 34810.0,
+          "recommended_production_7d_units": 16151.6,
+          "projected_end_stock_units": -34323.5,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.3378853419447789
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.262309788281751
+            },
+            {
+              "feature": "lead_time_days_std",
+              "impact": 0.13147304916001484
+            }
+          ],
+          "recommended_actions": [
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "SLP-DAN-018",
+          "sku_name": "Danone Griego sin azúcar",
+          "sku_family": "Danone Greek",
+          "risk_oos_7d": 0.19,
+          "risk_band": "Low",
+          "confidence": 0.832,
+          "days_of_supply": 6.6,
+          "stockout_date_est": "2026-01-21",
+          "daily_demand_units": 10571.0,
+          "forecast_demand_7d_units": 76834.8,
+          "available_units": 14863.0,
+          "target_ending_stock_units": 26427.5,
+          "recommended_production_7d_units": 16741.4,
+          "projected_end_stock_units": -45230.4,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.3681408100657874
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.16532177576523893
+            },
+            {
+              "feature": "lead_time_days_std",
+              "impact": 0.14535925226813973
+            }
+          ],
+          "recommended_actions": [
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "SLP-GRK-012",
+          "sku_name": "Danone Griego natural",
+          "sku_family": "Danone Griego",
+          "risk_oos_7d": 0.17,
+          "risk_band": "Low",
+          "confidence": 0.84,
+          "days_of_supply": 6.1,
+          "stockout_date_est": "2026-01-20",
+          "daily_demand_units": 17697.0,
+          "forecast_demand_7d_units": 138744.5,
+          "available_units": 20778.0,
+          "target_ending_stock_units": 44242.5,
+          "recommended_production_7d_units": 30719.7,
+          "projected_end_stock_units": -87246.8,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.12
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.11
+            }
+          ],
+          "recommended_actions": [
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "SLP-DES-022",
+          "sku_name": "Danette postre lácteo fresa",
+          "sku_family": "Danette",
+          "risk_oos_7d": 0.16,
+          "risk_band": "Low",
+          "confidence": 0.88,
+          "days_of_supply": 5.7,
+          "stockout_date_est": "2026-01-20",
+          "daily_demand_units": 27510.0,
+          "forecast_demand_7d_units": 194495.7,
+          "available_units": 37058.0,
+          "target_ending_stock_units": 68775.0,
+          "recommended_production_7d_units": 42840.9,
+          "projected_end_stock_units": -114596.8,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.19
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.15
+            }
+          ],
+          "recommended_actions": [
+            "Capacity constrained"
+          ]
+        },
+        {
+          "sku_id": "SLP-BEB-007",
+          "sku_name": "Danone Bebible natural deslactosado",
+          "sku_family": "Danone Bebible (Deslactosado)",
+          "risk_oos_7d": 0.11,
+          "risk_band": "Low",
+          "confidence": 0.92,
+          "days_of_supply": 6.6,
+          "stockout_date_est": "2026-01-21",
+          "daily_demand_units": 21204.0,
+          "forecast_demand_7d_units": 155849.4,
+          "available_units": 31724.0,
+          "target_ending_stock_units": 53010.0,
+          "recommended_production_7d_units": 33546.5,
+          "projected_end_stock_units": -90578.9,
+          "drivers": [
+            {
+              "feature": "days_of_supply",
+              "impact": 0.11
+            },
+            {
+              "feature": "promo_uplift_index",
+              "impact": 0.19
+            }
+          ],
+          "recommended_actions": [
+            "Capacity constrained"
+          ]
+        }
+      ]
+    }
+  ],
+  "ui_hints": {
+    "default_factory_id": "MX_TOL_01",
+    "sort_skus_by": [
+      "risk_oos_7d_desc",
+      "recommended_production_desc",
+      "days_of_supply_asc"
+    ],
+    "factory_tooltip_fields": [
+      "factory_name",
+      "global_risk_oos_7d",
+      "risk_band",
+      "capacity_used_units",
+      "capacity_week_units",
+      "next_stockout_date"
+    ],
+    "sku_card_fields": [
+      "risk_oos_7d",
+      "days_of_supply",
+      "forecast_demand_7d_units",
+      "available_units",
+      "recommended_production_7d_units",
+      "projected_end_stock_units",
+      "drivers",
+      "recommended_actions"
+    ]
+  }
+}
